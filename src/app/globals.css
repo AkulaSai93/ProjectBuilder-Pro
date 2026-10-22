@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  /* Avenir LT Pro is used when installed locally; Nunito Sans is the closest web fallback. */
+  --font-avenir: "Avenir LT Pro", "Avenir", "Avenir Next", var(--font-nunito-sans), sans-serif;
+  --font-inter: var(--font-inter-family), sans-serif;
+  --font-poppins: var(--font-poppins-family), sans-serif;
+  --font-montserrat: var(--font-montserrat-family), sans-serif;
+  --font-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+html, body {
+  margin: 0;
+  background: #0c0c0c;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
